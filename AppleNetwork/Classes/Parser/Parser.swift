@@ -10,7 +10,7 @@ import Foundation
 
 public struct Parser {
     
-    static func parse<ResponseType: Decodable>(_ data: Data?) throws -> ResponseType? {
+    public static func parse<ResponseType: Decodable>(_ data: Data?) throws -> ResponseType? {
         
         // Validation
         guard let _data = data else {

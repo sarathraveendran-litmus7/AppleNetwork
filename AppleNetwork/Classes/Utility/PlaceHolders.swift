@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct PlaceHolderInput: Encodable {
+public struct PlaceHolderInput: Encodable {
     
 }

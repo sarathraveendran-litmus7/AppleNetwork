@@ -24,7 +24,7 @@ Heavily customizable netwok manager to handle api calls. Currently it handle GET
   s.homepage         = 'https://github.com/sarathraveendran-litmus7/AppleNetwork'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sarathraveendran-litmus7' => 'Sarath Raveendran' }
+  s.author           = { 'SR' => 'Sarath Raveendran' }
   s.source           = { :git => 'https://github.com/sarathraveendran-litmus7/AppleNetwork.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
