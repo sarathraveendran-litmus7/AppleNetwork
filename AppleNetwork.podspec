@@ -30,6 +30,8 @@ Heavily customizable netwok manager to handle api calls. Currently it handle GET
 
   s.ios.deployment_target = '11.0'
   s.source_files = 'AppleNetwork/Classes/**/*'
+  s.swift_version = '5.0'
+
   
   # s.resource_bundles = {
   #   'AppleNetwork' => ['AppleNetwork/Assets/*.png']
