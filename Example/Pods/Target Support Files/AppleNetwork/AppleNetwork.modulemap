@@ -1,0 +1,6 @@
+framework module AppleNetwork {
+  umbrella header "AppleNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

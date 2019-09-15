@@ -1,0 +1,16 @@
+PODS:
+  - AppleNetwork (0.1.0)
+
+DEPENDENCIES:
+  - AppleNetwork (from `../`)
+
+EXTERNAL SOURCES:
+  AppleNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppleNetwork: 8e87b196a0252a978ab536e53b87d85b532dc93a
+
+PODFILE CHECKSUM: b7c046741e3b3b6591c4f351dbab2dcece5eec16
+
+COCOAPODS: 1.7.5
