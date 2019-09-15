@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Dictionary {
+public extension Dictionary {
     
     // Merge two Dictionaries
     static func +(lhs: [Key: Value], rhs: [Key: Value]) -> [Key: Value] {

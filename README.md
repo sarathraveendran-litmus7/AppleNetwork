@@ -22,7 +22,7 @@ pod 'AppleNetwork'
 
 ## Author
 
-sarathraveendran-litmus7, sarath.raveendran@litmus7@.com
+Sarath Raveendran
 
 ## License
 
