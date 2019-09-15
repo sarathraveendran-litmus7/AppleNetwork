@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppleNetwork'
-  s.version          = '1.0.0'
-  s.summary          = 'A light weight netwrok manager to handle all the api requests'
+  s.version          = '1.0.1'
+  s.summary          = 'Revealed Parser to public'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
