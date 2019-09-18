@@ -41,6 +41,14 @@ class Router: NSObject, NetworkRouter {
                     
                     if NetworkManager.logActivity {
                         
+                        print("URL: ", request.description)
+                        print("\nHeaders: ", (request.allHTTPHeaderFields ?? [:]) as Any)
+                        if let body = request.httpBody {
+                            
+                            let rawString = String(data: body, encoding: .utf8) ?? ""
+                            print("\nBody:", rawString)
+                        }
+                        
                         if let rawData = data {
                             
                             let rawString = String(data: rawData, encoding: .utf8) ?? "No data found"
