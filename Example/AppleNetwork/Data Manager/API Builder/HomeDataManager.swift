@@ -18,8 +18,10 @@ class HomeDataManager {
         return controller
     }()
     
+    
     let inputModal = InputModel()
     let output = OutPutModel()
+    
     
     func fetchEmployeesList() {
         

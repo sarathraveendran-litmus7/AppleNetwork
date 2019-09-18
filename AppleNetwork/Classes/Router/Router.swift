@@ -86,6 +86,7 @@ extension Router {
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 15)
         request.httpMethod = endPoint.httpMethod.name
         request.timeoutInterval = timeoutInterval ?? endPoint.defaultTimeoutInterval
+        addHeaders(endPoint.headers, request: &request)
         
         // Preapre Headers & Input Prams (Query URL and/or Body Params)
         do {
@@ -93,7 +94,7 @@ extension Router {
             switch endPoint.task {
                 
             case .request:
-                request.setValue(Header.Value.json.value, forHTTPHeaderField: Header.Key.contentType.name)
+                break
                 
             case .requestQueryParameters(let encoding, let urlParameters):
                 try self.configureParameters(encoding: encoding,
@@ -108,7 +109,7 @@ extension Router {
                                              request: &request)
                 
             case .requestParametersAndHeader(let encoding, let urlParameters, let bodyParameters, let additionalHeaders):
-                self.addAdditionalHeaders(additionalHeaders, request: &request)
+                self.addHeaders(additionalHeaders, request: &request)
                 try self.configureParameters(encoding: encoding,
                                              urlParameters: urlParameters,
                                              bodyParameters: bodyParameters,
@@ -137,7 +138,7 @@ extension Router {
     
     
     
-    func addAdditionalHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
+    func addHeaders(_ additionalHeaders: HTTPHeaders?, request: inout URLRequest) {
         
         // Validation
         guard let headers = additionalHeaders else {
