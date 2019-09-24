@@ -24,7 +24,7 @@ public struct Header {
     
     public enum Value: String {
         
-        case json = "applicaiton/json"
+        case json = "application/json"
         case formURLEncode = "application/x-www-form-urlencoded; charset=utf-8"
         
         public var value: String {
