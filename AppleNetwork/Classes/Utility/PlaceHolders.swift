@@ -11,3 +11,7 @@ import Foundation
 public struct PlaceHolderInput: Encodable {
     
 }
+
+public struct PlaceHolderOutput: Decodable {
+    
+}
